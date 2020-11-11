@@ -7,7 +7,7 @@
 
     if(mail($receiver,$name,$message,$header))
     {
-        echo "mail sent";
+       header("Location: index.html");
     }
     else{
         echo "Sending Failed";
